@@ -41,8 +41,8 @@ shadow-line information can be used for **cross-sectional stock selection**.
 
 For each stock and trading day:
 
-- **Upper Shadow**
-- **Lower Shadow**
+- **Upper Shadow**: `High - max(Open, Close)`
+- **Lower Shadow**: `min(Open, Close) - Low`
 
 To normalize scale effects, we standardize shadow lengths using a **5-day rolling mean**.
 
